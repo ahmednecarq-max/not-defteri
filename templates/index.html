@@ -14,10 +14,10 @@
     </form>
     <h3>Notlar:</h3>
     {% if notlar %}
-        {% for not in notlar %}
+        {% for item in notlar %}
             <div class="not-karti">
-                <h4>{{ not.baslik }}</h4>
-                <p>{{ not.icerik }}</p>
+                <h4>{{ item.baslik }}</h4>
+                <p>{{ item.icerik }}</p>
             </div>
         {% endfor %}
     {% else %}
