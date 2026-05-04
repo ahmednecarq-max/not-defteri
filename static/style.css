@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    text-align: center;
+    padding: 50px;
+}
+h1 { color: #333; }
+input, textarea {
+    display: block;
+    margin: 8px auto;
+    padding: 10px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+textarea { height: 80px; }
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.not-karti {
+    background: white;
+    margin: 10px auto;
+    width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+    text-align: left;
+}
+.not-karti h4 { margin: 0 0 5px; color: #333; }
+.not-karti p { margin: 0; color: #666; }
