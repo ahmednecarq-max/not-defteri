@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Not Defteri</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>📝 Not Defteri</h1>
+    <form method="POST">
+        <input type="text" name="baslik" placeholder="Not başlığı" required>
+        <textarea name="icerik" placeholder="Not içeriği" required></textarea>
+        <button type="submit">Ekle</button>
+    </form>
+    <h3>Notlar:</h3>
+    {% if notlar %}
+        {% for not in notlar %}
+            <div class="not-karti">
+                <h4>{{ not.baslik }}</h4>
+                <p>{{ not.icerik }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Henüz not eklenmedi.</p>
+    {% endif %}
+</body>
+</html>
